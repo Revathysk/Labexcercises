@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.header1{
+    text-align: center;
+    background-color: plum;
+    width: 100%;
+
+}
+
+/* =====This is the CSS for the Nav Bar==== */
+.leftNav {
+    list-style: none;
+}
+
+.leftNav:hover {
+    background-color: black;
+}
+
+.navBtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.leftNav {
+    position: relative;
+    display: inline-block;
+}
+
+.leftNav-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+}
+
+.leftNav-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.leftNav a:hover {
+    background-color: #ddd;
+}
+
+.leftNav:hover .leftNav-content {
+    display: block;
+}
+
+.leftNav:hover .navBtn {
+    background-color: red;
+}
+/*====== This is the CSS for the Search Bar =====*/
+
+div {
+    background: white;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 10px;
+
+}
+
+input[type="search"] {
+    border: none;
+    whitespace: wrap;
+    border-radius: 5px 5px 5px 5px;
+    background: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.35em 0.75em;
+    border: black;
+    font-size: 1.1em;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 3em;
+    flex: 2 0 250px;
+}
+
+input[type="search"]:focus {
+    background: red;
+    color: white;
+    letter-spacing: .1em;
+    outline: none;
+}
+
+/* This is the CSS used to center the Navbar and Search Bar */
+
+#centerDiv{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    display: ;
+    background: lightblue;
+    /* align-items: center; */
+}
+
+/* This is the CSS for the AD box */
+#ad-container{
+    border:solid black;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    background-color: lightblue;
+    width: 100%;
+    animation-name: coupon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+/* This container will hold the sign-in box and the best selling products box */
+
+#mid-container{
+    border:solid black;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    background-color: lightblue;
+    display: flex;
+    width: 100%;
+
+}
+/* ===== These boxes are held within the "mid-container" ====== */
+
+.sign-in{
+    border:solid black;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 600px;
+    height: 100px;
+}
+
+.best-products{
+    border:solid black;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 600px;
+    height: 100px;
+}
+    .Logo{
+        height: 200px;
+        width: 200px;
+
+    }
+
+
+/* ======== This container holds the image boxes =========== */
+
+    #image-container{
+        display: flex;
+        border:solid black;
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: lightblue;
+        justify-content: space-evenly;
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        height: 150px;
+        width: 150px;
+        opacity: 0.5;
+    }
+    img:hover {
+        opacity: 1;
+        transition: 1s ease;
+    }
+ 
+
+/* This container holds the contact form that links you to the second html page  */
+
+#contact-container{
+        border:solid black;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: center;
+        background-color: lightblue;
+        display: flex;
+        width: 100%;
+}
+
+/* This container aligns page */
+
+.fullpage{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+
+}
+
+/* This is the CSS for the animations */
+@keyframes coupon {
+    from{color: red;}
+    to{color: black;}
+}
+
+/* ======= This is the CSS for the contact form ======== */
+
+form {
+    padding: 15px;
+    background-color: white;
+    font-style: italic;
+    border-style: solid;
+    font-weight: 900px;
+    }
+    input[type=submit] {
+      background: white;
+       background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+       background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+       background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+       background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+       background-image: -webkit-linear-gradient(to bottom, #30E3CB, #2BC4AD);
+       -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+       border-radius: 8px;
+       color: black;
+        font-family: ‘Montserrat’, sans-serif;
+       font-size: 24px;
+       font-weight: 100;
+       padding: 15px;
+       text-decoration: none;
+       display: inline-block;
+       cursor: pointer;
+       text-align: center;
+    }
+    input[type=text]:focus {
+      background-color: #07456F;
+      color: white;
+      width: 50%
+      }
+    input[type=email]:focus {
+        background-color: #07456F;
+        color: white;
+        width: 50%
+        }
+  .submit:hover {
+      border: solid #30E3CB 0;
+      background: #30E3CB;
+      background-image: -webkit-linear-gradient(top, #30E3CB, #30E3CB);
+      background-image: -moz-linear-gradient(top, #30E3CB, #30E3CB);
+      background-image: -ms-linear-gradient(top, #30E3CB, #30E3CB);
+      background-image: -o-linear-gradient(top, #30E3CB, #30E3CB);
+      background-image: -webkit-linear-gradient(to bottom, #30E3CB, #30E3CB);
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .contactform {
+    margin-left: 200px;
+    margin-right: 200px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: white;
+        font-family: Avenir, Heveltica, Arial, san-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+      li {
+    padding: 1em;
+    background-color:lightblue;
+         }
+      #image{
+          width: 200px;
+          height:200px;
+      }
+     ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 200px 200px 200px;
+        grid-auto-columns: auto;
+        /* grid-template-rows:repeat(3,1fr);
+        grid-auto-rows: 1fr;
+        grid-gap: 1rem; */
+      }

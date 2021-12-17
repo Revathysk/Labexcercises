@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bodyContainer">
+
+        <div id="battlespace">
+            <div class="mainCharacterView left">
+                <div class="nameBox">USS Schwarzenegger</div>
+                <div class="playerImage"></div>
+                <div class="playerStats">
+
+                    <h4 class='usHull'> Hull :20 </h4>
+                    <h4 class='usFirePower'> FirePower : 5</h4>
+                    <h4 class='usAccuracy'> Accuracy : .7</h4>
+
+                </div>
+
+            </div>
+
+            <!-- <div id='hide' class='mainCharacterView'>
+
+                <h1 id='gameStatus'> Hide this display in action </h1>
+            </div> -->
+
+            <div class="mainCharacterView right">
+
+                <div class="nameBox">Enemy</div>
+                <div class="enemyImage"></div>
+
+                <div class="enemyStats">
+                    <h4 class='enemyHull'> Hull :0 </h4>
+                    <h4 class='enemyFirePower'> FirePower : 0</h4>
+                    <h4 class='enemyAccuracy'> Accuracy : 0</h4>
+
+                </div>
+
+            </div>
+        </div>
+        <button id='gamestart' onclick="playGame()"> START </button>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
